@@ -3,8 +3,8 @@ import './App.css';
 import Route from 'react-router-dom/Route';
 
 
-import About from './Pages/About/AboutPage'; 
-import MyNavbar from './Navbar/MyNavbar'; 
+import About from './Pages/About/AboutPage';
+import MyNavbar from './Navbar/MyNavbar';
 import Carousel from './Carousel/MyCarousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
