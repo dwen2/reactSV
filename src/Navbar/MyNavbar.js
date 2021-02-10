@@ -14,7 +14,9 @@ export default class MyNavbar extends React.Component {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-              <Nav.Link href="#Indicators">Indicators</Nav.Link>
+              <Nav.Link as={Link} to="/indicator">
+                Indicators
+              </Nav.Link>
               <Nav.Link href="#Map">Map</Nav.Link>
               <Nav.Link as={Link} to="/about">
                 About

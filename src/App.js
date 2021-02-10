@@ -12,6 +12,7 @@ function App() {
       <body>
         <MyNavbar />
         <Route path="/about" exact component={About} />
+        <Route path="/indicator" exact component={About} />
         <Route path="/" exact component={Home} />
       </body>
 
