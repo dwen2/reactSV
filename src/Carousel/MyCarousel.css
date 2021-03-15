@@ -1,5 +1,7 @@
-.carousel {
-    width:900px;
-    height:500px;
-    margin: auto;
-}
+.tales {
+    width: 100%;
+  }
+  .carousel-inner{
+    width:100%;
+    max-height: 600px !important;
+  }

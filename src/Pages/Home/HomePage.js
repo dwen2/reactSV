@@ -1,7 +1,6 @@
 import logo from "../../logo.svg";
 import React from "react";
 import Carousel from "../../Carousel/MyCarousel";
-// import logo from "../../logo.svg";
 
 function Home() {
   return (
@@ -17,7 +16,7 @@ function Home() {
         officially-recognized sources.
       </p>
 
-      <div className="App-Carousel">
+      <div className="AppCarousel">
         <Carousel />
       </div>
     </div>

@@ -21,7 +21,9 @@ export default class MyNavbar extends React.Component {
               <Nav.Link as={Link} to="/about">
                 About
               </Nav.Link>
-              <Nav.Link href="#Contact">Contact</Nav.Link>
+              <Nav.Link as={Link} to="/contact">
+                Contact
+              </Nav.Link>
             </Nav>
             <Nav>
               <Nav.Link href="#Admin">Sign in</Nav.Link>
