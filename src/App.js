@@ -7,6 +7,7 @@ import MyNavbar from "./Navbar/MyNavbar";
 import Indicator from "./Pages/Indicator/IndicatorPage";
 import Footer from "./Footer/FooterPage";
 import Contact from "./Pages/Contact/ContactPage";
+import VOne from "./Pages/Indicator/Detail/VOne.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -16,6 +17,8 @@ function App() {
         <MyNavbar />
         <Route path="/about" exact component={About} />
         <Route path="/indicator" exact component={Indicator} />
+        <Route path="/indicator/:id" exact component={VOne} />
+
         <Route path="/contact" exact component={Contact} />
         <Route path="/" exact component={Home} />
         <Footer />

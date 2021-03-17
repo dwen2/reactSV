@@ -1,6 +1,6 @@
 import React from "react";
-import V1 from "./V1";
-import "./IndicatorPage.css"; 
+import Accordion from "./Accordion.js";
+import "./IndicatorPage.css";
 
 function Indicator() {
   return (
@@ -8,18 +8,30 @@ function Indicator() {
       <div class="firstPart">
         <p class="midTitle">Indicators</p>
         <p>
-          <span class="midParaFirstWords">Indicators</span> are
-          various categories of <span class="midParaFirstWords">health statistics </span> 
-          throughout the nation of Nepal. They are presented here through different
-          forms of <span class="midParaFirstWords">graphs, charts and visualizations</span>.           
+          <span class="midParaFirstWords">Indicators</span> are various
+          categories of{" "}
+          <span class="midParaFirstWords">health statistics </span>
+          throughout the nation of Nepal. They are presented here through
+          different forms of{" "}
+          <span class="midParaFirstWords">
+            graphs, charts and visualizations
+          </span>
+          .
         </p>
       </div>
 
       <hr />
-      <div id="vis">
-        <V1 />
-      </div>      
-    </div>    
+
+      <div class="firstPart">
+        <p>
+          All of indicators are separated into different categories, as shown
+          below.
+          <br />
+          <br />
+          <Accordion />
+        </p>
+      </div>
+    </div>
   );
 }
 
