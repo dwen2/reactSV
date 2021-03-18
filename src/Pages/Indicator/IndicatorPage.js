@@ -1,5 +1,5 @@
 import React from "react";
-import Accordion from "./Accordion.js";
+import IndicatorList from "./IndicatorList.js";
 import "./IndicatorPage.css";
 
 function Indicator() {
@@ -28,7 +28,7 @@ function Indicator() {
           below.
           <br />
           <br />
-          <Accordion />
+          <IndicatorList />
         </p>
       </div>
     </div>
