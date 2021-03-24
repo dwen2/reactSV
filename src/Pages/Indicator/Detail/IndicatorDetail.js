@@ -4,6 +4,7 @@ import { Tabs, Tab } from "react-bootstrap";
 import Api from "api";
 import IndicatorDetailTable from "Pages/Indicator/Detail/IndicatorDetailTable";
 import IndicatorDetailGraph from "Pages/Indicator/Detail/IndicatorDetailGraph";
+import "./IndicatorDetail.css";
 
 function IndicatorDetail() {
   const { id } = useParams();
@@ -24,20 +25,22 @@ function IndicatorDetail() {
 
   return (
     <>
-      <h2>
+      <h2 id="indicatorTitle">
         {indicator.code}: {indicator.name}
       </h2>
-      <Tabs defaultActiveKey="data">
-        <Tab eventKey="data" title="Data">
-          <IndicatorDetailTable indicator={indicator} />
-        </Tab>
-        <Tab eventKey="graphs" title="Graphs">
-          <IndicatorDetailGraph indicator={indicator} />
-        </Tab>
-        <Tab eventKey="metadata" title="Metadata">
-          Metadata
-        </Tab>
-      </Tabs>
+      <p id="indicatorTable">
+        <Tabs defaultActiveKey="data">
+          <Tab eventKey="data" title="Data">
+            <IndicatorDetailTable indicator={indicator} />
+          </Tab>
+          <Tab eventKey="graphs" title="Graphs">
+            <IndicatorDetailGraph indicator={indicator} />
+          </Tab>
+          <Tab eventKey="metadata" title="Metadata">
+            Metadata
+          </Tab>
+        </Tabs>
+      </p>
     </>
   );
 }

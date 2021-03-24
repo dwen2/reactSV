@@ -9,22 +9,6 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const indicatorData = [
-  { year: "2016", value: 2, source: "NDHS" },
-  { year: "2017", value: 5, source: "NDHS" },
-  { year: "2018", value: 10, source: "NDHS" },
-  { year: "2019", value: 14, source: "NDHS" },
-  { year: "2020", value: 29, source: "NDHS" },
-];
-
-const subIndicatorData = [
-  { year: "2016", value: 1, source: "NDHS" },
-  { year: "2017", value: 2, source: "NDHS" },
-  { year: "2018", value: 4, source: "NDHS" },
-  { year: "2019", value: 4, source: "NDHS" },
-  { year: "2020", value: 9, source: "NDHS" },
-];
-
 function IndicatorDetailGraph({ indicator }) {
   return (
     <div style={{ height: "400px" }}>

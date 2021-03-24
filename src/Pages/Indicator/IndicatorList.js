@@ -19,7 +19,7 @@ function IndicatorList(props) {
     <Accordion defaultActiveKey="0">
       <Card>
         <Accordion.Toggle as={Card.Header} eventKey="0">
-          TODO: Categories
+          Indicator List
         </Accordion.Toggle>
         <Accordion.Collapse eventKey="0">
           <Card.Body>
