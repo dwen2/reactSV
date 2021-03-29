@@ -26,7 +26,7 @@ function IndicatorDetailGraph({ indicator }) {
         >
           <CartesianGrid strokeDasharray="3 3" />
           <XAxis dataKey="year" />
-          <YAxis />
+          <YAxis dataKey="value" />
           <Tooltip />
           <Legend />
           <Line data={indicator.data_set} type="monotone" dataKey="value" />

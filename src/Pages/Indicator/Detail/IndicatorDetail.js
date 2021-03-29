@@ -28,6 +28,7 @@ function IndicatorDetail() {
       <h2 id="indicatorTitle">
         {indicator.code}: {indicator.name}
       </h2>
+      <hr />
       <p id="indicatorTable">
         <Tabs defaultActiveKey="data">
           <Tab eventKey="data" title="Data">

@@ -1,69 +1,35 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 30vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+/*css for HomePage.js*/
+.home_topPara {
   background-color: #282c34;
   min-height: 30vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-left: 10%;
+  padding-top: 100px;
+  padding-right: 50%;
+  padding-bottom: 30px;
+  color: aliceblue;
 }
 
-.App-link {
-  color: #61dafb;
+.home_grid {
+  padding-top: 30px;
+  padding-right: 22%;
+  padding-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#home_title {
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 50px;
+  padding-bottom: 15px;
 }
 
-/* my css */
-.App-body {
-  background-color: #282c34;
-  min-height: 30vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;  
-}
-
-.midPara {
-  margin: auto;
-  width: 58%;
-  padding: 10px;
-  padding-top: 30px;  
-  color: whitesmoke;
-  font-size: calc(0.5px + 2vmin);
-}
-
-.midTitle {
-  text-align: center;
-  margin: auto;
-  font-size: 30px;  
-  padding-bottom: 10px; 
+.titles {
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 50px;
+  padding-left: 10%;
 }
 
 hr {
-  width: 90%;
+  width: 95%;
   background-color: #979899;
 }

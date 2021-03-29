@@ -7,6 +7,13 @@ function Contact() {
     <div>
       <div class="midParaContact">
         <p id="midTitleContact">Contact Us</p>
+        <img
+          id="contactImage"
+          src="images/contact.svg"
+          width="400"
+          height="400"
+          alt="Nepal Ministry of Health"
+        ></img>
         <br />
         <p>
           <span class="midParaFirstWordsContact">Nepal Ministry of Health</span>
@@ -18,11 +25,9 @@ function Contact() {
           +977 1-4262543 ext. 4262802
         </p>
         <hr id="lineBreak" />
+
         <form>
           Submit your message below:
-          <br />
-          <br />
-          <br />
           <p>First name:</p>
           <input type="text" />
           <p>Last name:</p>
@@ -32,10 +37,10 @@ function Contact() {
           <p>Subject:</p>
           <input type="text" />
           <p>Message:</p>
-          <input type="text" />
+          <textarea type="text" />
         </form>
         <br />
-        <Button variant="primary">Success</Button>
+        <Button variant="primary">Submit</Button>
       </div>
     </div>
   );

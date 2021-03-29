@@ -1,28 +1,27 @@
-.firstPart {
-  margin: auto;
-  width: 50%;
-  padding: 10px;
+.about_firstPart {
+  width: 80%;
   padding-top: 30px;
+  padding-left: 20%;
 }
 
-.midTitle {
-  text-align: center;
+.about_midTitle {
+  text-align: left;
   margin: auto;
   font-size: 35px;
   /*  color: #4D70FC; */
   padding-bottom: 10px;
 }
 
-.midParaFirstWords {
+.blueWords {
   font-weight: bold;
   color: #4d70fc;
 }
 
-.boldWords {
+.about_boldWords {
   font-weight: bold;
 }
 
-.paraTitleLeft {
+.about_paraTitleLeft {
   margin: auto;
   text-align: center;
   padding: 10px;
@@ -30,7 +29,7 @@
   font-size: 20px;
 }
 
-.paraTitleRight {
+.about_paraTitleRight {
   margin: auto;
   text-align: center;
   padding: 10px;
@@ -38,7 +37,7 @@
   font-size: 20px;
 }
 
-.secondPartPara {
+.about_secondPartPara {
   float: left;
   width: 50%;
   padding: 80px;
@@ -46,20 +45,20 @@
   padding-bottom: 10px;
 }
 
-.secondPart:after {
+.about_secondPart:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.thirdPart {
+.about_thirdPart {
   margin: auto;
   width: 50%;
   padding: 10px;
   padding-top: 0px;
 }
 
-.thirdTitle {
+.about_thirdTitle {
   text-align: center;
   margin: auto;
   font-size: 27px;
@@ -67,8 +66,8 @@
   padding-bottom: 10px;
 }
 
-/* .thirdPartImages {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-  } */
+#aboutImage {
+  float: right;
+  display: block;
+  padding-left: 17%;
+}

@@ -5,13 +5,11 @@
 .midParaContact {
   margin: auto;
   width: 50%;
-  padding: 10px;
   padding-top: 30px;
   color: black;
 }
 
 #midTitleContact {
-  text-align: center;
   margin: auto;
   font-size: 30px;
   /*color: #4D70FC;*/
@@ -22,29 +20,9 @@
   font-weight: bold;
   color: #4d70fc;
 }
-/* 
-#midTitleImage {
-  text-align: center;
-  width: 100%;
-  padding-top: 3px;
-}
 
-#midParaFirstWords {
-  font-weight: bold;
-}
-
-#questionImage {
+#contactImage {
   float: right;
+  display: block;
+  padding-left: 10%;
 }
-
-.secondPart {
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-  padding-top: 0px;
-}
-
-#secondPartTitle {
-  font-size: 20px;
-  color: #4d70fc;
-} */

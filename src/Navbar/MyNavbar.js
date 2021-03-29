@@ -1,13 +1,19 @@
 import React from "react";
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import "./MyNavbar.css";
+import "./Navbar.css";
 
 export default class MyNavbar extends React.Component {
   render() {
     return (
       <div>
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar
+          className="sticky-nav"
+          collapseOnSelect
+          expand="lg"
+          bg="dark"
+          variant="dark"
+        >
           <Navbar.Brand as={Link} to="/">
             Nepal Health Stats
           </Navbar.Brand>
@@ -17,7 +23,7 @@ export default class MyNavbar extends React.Component {
               <Nav.Link as={Link} to="/indicator">
                 Indicators
               </Nav.Link>
-              <Nav.Link href="#Map">Map</Nav.Link>
+              {/* <Nav.Link href="#Map">Map</Nav.Link> */}
               <Nav.Link as={Link} to="/about">
                 About
               </Nav.Link>
