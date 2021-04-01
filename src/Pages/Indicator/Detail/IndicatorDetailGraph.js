@@ -9,6 +9,8 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
+const Colors = ["red", "green", "blue", "pink", "orange", "purple"];
+
 function IndicatorDetailGraph({ indicator }) {
   return (
     <div style={{ height: "400px" }}>
@@ -16,7 +18,7 @@ function IndicatorDetailGraph({ indicator }) {
         <LineChart
           width={500}
           height={300}
-          data={indicator.data_set}
+          data={indicator.data_set.sort((k, v) => k.year - v.year)}
           margin={{
             top: 5,
             right: 30,
@@ -25,16 +27,23 @@ function IndicatorDetailGraph({ indicator }) {
           }}
         >
           <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="year" />
+          <XAxis dataKey="year" allowDuplicatedCategory={false} />
           <YAxis dataKey="value" />
           <Tooltip />
           <Legend />
-          <Line data={indicator.data_set} type="monotone" dataKey="value" />
-          {indicator.indicator_set.map((subindicator) => (
+          <Line
+            data={indicator.data_set.sort((k, v) => k.year - v.year)}
+            type="monotone"
+            dataKey="value"
+            name={indicator.name}
+          />
+          {indicator.indicator_set.map((subindicator, index) => (
             <Line
-              data={subindicator.data_set}
+              data={subindicator.data_set.sort((k, v) => k.year - v.year)}
               type="monotone"
               dataKey="value"
+              stroke={Colors[index]}
+              name={subindicator.name}
             />
           ))}
         </LineChart>
