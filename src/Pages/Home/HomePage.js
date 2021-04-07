@@ -1,55 +1,33 @@
 import logo from "../../logo.svg";
 import React from "react";
-import Carousel from "../../Carousel/MyCarousel";
+import MyCarousel from "../../Carousel/MyCarousel";
 import Grid from "Grid/Grid";
 
 function Home() {
   return (
     <div>
       <p className="home_topPara">
+        <img id="homeImage" src="images/homepage.svg" alt="homepage_icon" />
         <h1 id="home_title">Nepal Health Stats</h1>
-        Nepal Health Stats is a web application that tracks and presents the
-        health indicators of the Nepalese population for the Nepal Ministry of
-        Health in a simple, rich and interactive manner. All data is taken from
-        officially-recognized sources.
+        <div id="home_topPara_text">
+          Nepal Health Stats is a web application that tracks and presents the
+          <span className="blueWords"> health indicators</span> of the Nepalese
+          population for the Nepal Ministry of Health in a{" "}
+          <span className="blueWords">simple, rich and interactive</span>{" "}
+          manner. All data is taken from{" "}
+          <span className="blueWords">officially-recognized sources</span>.
+        </div>
       </p>
-
-      {/* <hr /> */}
-
-      <h1 className="titles">Indicator Categories</h1>
-
-      <div className="home_grid">
-        <Grid />
-      </div>
 
       <hr />
 
-      <h1 className="titles">Featured Dataset</h1>
+      {/* <h1 className="titles">Indicator Categories</h1> */}
 
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <div className="home_carousel">
+        <MyCarousel />
+      </div>
+
+      {/* <h1 className="titles">Featured Dataset</h1> */}
 
       <div></div>
     </div>

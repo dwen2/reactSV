@@ -39,13 +39,24 @@ export default class Main extends React.Component {
   render() {
     return (
       <div>
-        <p>Example Visualization: Average Government Spending on Healthcare</p>
-        <p>Year: 2012 - 2015</p>
         <VictoryChart domainPadding={10} theme={VictoryTheme.material}>
           <VictoryAxis
+            style={{
+              axis: { stroke: "transparent" },
+              ticks: { stroke: "transparent" },
+              tickLabels: { fill: "transparent" },
+            }}
             tickValues={["Quarter 1", "Quarter 2", "Quarter 3", "Quarter 4"]}
           />
-          <VictoryAxis dependentAxis tickFormat={(x) => `$${x / 1000}m`} />
+          <VictoryAxis
+            style={{
+              axis: { stroke: "transparent" },
+              ticks: { stroke: "transparent" },
+              tickLabels: { fill: "transparent" },
+            }}
+            dependentAxis
+            tickFormat={(x) => `$${x / 1000}m`}
+          />
           <VictoryStack colorScale={"warm"}>
             <VictoryBar data={data2012} x={"quarter"} y={"earnings"} />
             <VictoryBar data={data2013} x={"quarter"} y={"earnings"} />

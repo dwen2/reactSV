@@ -32,7 +32,9 @@ export default class MyNavbar extends React.Component {
               </Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link href="#Admin">Sign in</Nav.Link>
+              <Nav.Link href="https://healthviz-staging.herokuapp.com/admin">
+                Sign in
+              </Nav.Link>
               <NavDropdown title="Languages" id="collapsible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">English</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">नेपाली</NavDropdown.Item>

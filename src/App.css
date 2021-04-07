@@ -1,12 +1,9 @@
 /*css for HomePage.js*/
 .home_topPara {
-  background-color: #282c34;
-  min-height: 30vh;
-  padding-left: 10%;
-  padding-top: 100px;
-  padding-right: 50%;
-  padding-bottom: 30px;
-  color: aliceblue;
+  margin: auto;
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 2%;
 }
 
 .home_grid {
@@ -16,10 +13,13 @@
 }
 
 #home_title {
-  font-weight: bolder;
-  font-style: italic;
-  font-size: 50px;
+  font-size: 35px;
   padding-bottom: 15px;
+}
+
+#home_topPara_text {
+  width: 60%;
+  margin: auto;
 }
 
 .titles {
@@ -32,4 +32,8 @@
 hr {
   width: 95%;
   background-color: #979899;
+}
+
+#homeImage {
+  height: 275px;
 }
