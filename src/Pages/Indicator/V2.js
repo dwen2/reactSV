@@ -86,7 +86,16 @@ export default class Main extends React.Component {
           <VictoryScatter
             data={data}
             size={5}
-            style={{ data: { fill: "#c43a31" } }}
+            style={{
+              data: { fill: "#c43a31" },
+            }}
+          />
+          <VictoryAxis
+            style={{
+              axis: { stroke: "transparent" },
+              ticks: { stroke: "transparent" },
+              tickLabels: { fill: "transparent" },
+            }}
           />
         </VictoryChart>
       </div>

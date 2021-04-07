@@ -1,0 +1,77 @@
+#outerfooter {
+  position: relative; /* reposition to bottom of page if too short */
+  background-color: #313131;
+  /* margin was top=50px, but problems with expanded summarydiv (singleindicator page) 
+	   so then set to 0 all, but now reverted to 40px border at Jordan's request 15 Jun 2014 */
+  border-top: #ffffff solid 40px; /* instead of margin-top to prevent border-collapse */
+  padding: 0;
+  clear: both;
+}
+#footerdiv {
+  color: #e0e0e0;
+  width: 1148px;
+  height: 120px;
+  margin: 0 auto;
+  padding: 0 28px;
+  font-size: 12px;
+  background-color: #313131;
+}
+
+#footerdiv .leftfooterdiv1 {
+  width: 168px;
+  padding-top: 23px;
+  float: left;
+}
+#footerdiv .leftfooterdiv1 img {
+  float: left;
+}
+#footerdiv .leftfooterdiv2 {
+  width: 150px;
+  padding-top: 25px; /* tricky to line with links to the right */
+  line-height: 1.6;
+  padding-left: 28px;
+  float: left;
+}
+
+#footerdiv .rightfooterdiv1 {
+  width: 98px;
+  padding-top: 27px;
+  float: right;
+}
+#footerdiv .rightfooterdiv2 {
+  width: 196px;
+  padding-top: 27px;
+  float: right;
+}
+#footerdiv p {
+  padding-top: 8px; /* to match line ht of left div 2 */
+  color: #b2b2b2;
+}
+#footerdiv a,
+#footerdiv a:visited {
+  color: #0bb951; /* green */
+  text-decoration: none;
+}
+#footerdiv a:hover {
+  color: #ffbf00; /* yellow */
+  text-decoration: none;
+}
+/* language buttons */
+#footerdiv .rightfooterdiv1 a {
+  cursor: pointer;
+}
+#footerdiv p.current a,
+#footerdiv p.current a:visited {
+  color: #0bb951; /* green */
+  text-decoration: none;
+}
+#footerdiv p.notcurrent a,
+#footerdiv p.notcurrent a:visited {
+  color: #b2b2b2; /* grey */
+  text-decoration: none;
+}
+#footerdiv p.current a:hover,
+#footerdiv p.notcurrent a:hover {
+  color: #ffbf00; /* yellow */
+  text-decoration: none;
+}

@@ -1,7 +1,8 @@
 import logo from "../../logo.svg";
-import React from "react";
+import React, { Component } from "react";
 import MyCarousel from "../../Carousel/MyCarousel";
 import Grid from "Grid/Grid";
+import V1 from "../Indicator/V1.js";
 
 function Home() {
   return (
@@ -29,6 +30,7 @@ function Home() {
 
       {/* <h1 className="titles">Featured Dataset</h1> */}
 
+      <br />
       <div></div>
     </div>
   );
