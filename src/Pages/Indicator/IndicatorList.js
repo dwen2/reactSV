@@ -1,7 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ListGroup from "react-bootstrap/ListGroup";
-import { Accordion, Card, Pagination, Spinner } from "react-bootstrap";
+import {
+  Accordion,
+  Card,
+  Pagination,
+  Spinner,
+  Badge,
+  Row,
+  Col,
+} from "react-bootstrap";
 import Api from "api";
 
 function IndicatorList(props) {
@@ -41,19 +49,26 @@ function IndicatorList(props) {
             <ListGroup variant="flush">
               {indicators.map((i) => (
                 <ListGroup.Item action as={Link} to={`/indicator/${i.id}`}>
-                  {i.name}
+                  <Row>
+                    <Col xs={1}>
+                      <Badge variant="light">{i.code}</Badge>
+                    </Col>
+                    <Col>{i.name}</Col>
+                  </Row>
                 </ListGroup.Item>
               ))}
             </ListGroup>
           </Card.Body>
         </Accordion.Collapse>
-        <Pagination className="ml-3">
-          <Pagination.First disabled />
-          <Pagination.Prev disabled />
-          <Pagination.Item active={true}>{1}</Pagination.Item>
-          <Pagination.Next disabled />
-          <Pagination.Last disabled />
-        </Pagination>
+        {!loading && (
+          <Pagination className="ml-3">
+            <Pagination.First disabled />
+            <Pagination.Prev disabled />
+            <Pagination.Item active={true}>{1}</Pagination.Item>
+            <Pagination.Next disabled />
+            <Pagination.Last disabled />
+          </Pagination>
+        )}
       </Card>
     </Accordion>
   );
