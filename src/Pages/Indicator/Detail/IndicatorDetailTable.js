@@ -43,7 +43,7 @@ function IndicatorDetailTable({ indicator }) {
       </thead>
       <tbody>
         <tr>
-          <td rowspan={indicator.indicator_set.length + 1}>{indicator.code}</td>
+          <td rowspan={indicator.subindicators.length + 1}>{indicator.code}</td>
           <td>{indicator.name}</td>
           <td>{indicator.name_np}</td>
           <td>{getBaselineValue(indicator)}</td>
@@ -56,7 +56,7 @@ function IndicatorDetailTable({ indicator }) {
             </>
           ))}
         </tr>
-        {indicator.indicator_set.map((subindicator) => (
+        {indicator.subindicators.map((subindicator) => (
           <tr>
             <td>
               {subindicator.code} {subindicator.name}

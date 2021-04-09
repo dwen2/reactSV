@@ -37,7 +37,7 @@ function IndicatorDetailGraph({ indicator }) {
             dataKey="value"
             name={indicator.name}
           />
-          {indicator.indicator_set.map((subindicator, index) => (
+          {indicator.subindicators.map((subindicator, index) => (
             <Line
               data={subindicator.data_set.sort((k, v) => k.year - v.year)}
               type="monotone"

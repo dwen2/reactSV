@@ -1,16 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ListGroup from "react-bootstrap/ListGroup";
-import { Accordion, Card } from "react-bootstrap";
+import { Accordion, Card, Pagination, Spinner } from "react-bootstrap";
 import Api from "api";
 
 function IndicatorList(props) {
   const [indicators, setIndicators] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     async function fetchIndicators() {
+      setLoading(true);
       const res = await Api.getIndicators();
       setIndicators(res.data);
+      setLoading(false);
     }
     fetchIndicators();
   }, []);
@@ -23,6 +26,18 @@ function IndicatorList(props) {
         </Accordion.Toggle>
         <Accordion.Collapse eventKey="0">
           <Card.Body>
+            {loading && (
+              <div class="d-flex justify-content-center">
+                <Spinner
+                  size="lg"
+                  animation="border"
+                  role="status"
+                  className="mx-auto"
+                >
+                  <span className="sr-only">Loading...</span>
+                </Spinner>
+              </div>
+            )}
             <ListGroup variant="flush">
               {indicators.map((i) => (
                 <ListGroup.Item action as={Link} to={`/indicator/${i.id}`}>
@@ -32,6 +47,13 @@ function IndicatorList(props) {
             </ListGroup>
           </Card.Body>
         </Accordion.Collapse>
+        <Pagination className="ml-3">
+          <Pagination.First disabled />
+          <Pagination.Prev disabled />
+          <Pagination.Item active={true}>{1}</Pagination.Item>
+          <Pagination.Next disabled />
+          <Pagination.Last disabled />
+        </Pagination>
       </Card>
     </Accordion>
   );

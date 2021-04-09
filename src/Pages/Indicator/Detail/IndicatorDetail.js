@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { Tabs, Tab } from "react-bootstrap";
+import { Tabs, Tab, Breadcrumb } from "react-bootstrap";
 import Api from "api";
 import IndicatorDetailTable from "Pages/Indicator/Detail/IndicatorDetailTable";
 import IndicatorDetailGraph from "Pages/Indicator/Detail/IndicatorDetailGraph";
@@ -25,6 +25,10 @@ function IndicatorDetail() {
 
   return (
     <>
+      <Breadcrumb>
+        <Breadcrumb.Item href="/indicator">Indicators</Breadcrumb.Item>
+        <Breadcrumb.Item active>Detail</Breadcrumb.Item>
+      </Breadcrumb>
       <h2 id="indicatorTitle">
         {indicator.code}: {indicator.name}
       </h2>
